@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		
+		#page{
+
+			width:100%;
+			height:100%;
+			background-color:gold;
+			position:relative;
+		}
+
+		header{width:100%;
+
+			height:200px;
+			background-color:blue;
+			position: absolute;
+			top:1px;
+
+		}
+
+
+		main{width:100%;
+
+			position:absolute;
+			top:200px;
+			height:1000px;
+			background-color:darkred;
+
+
+			
+
+
+
+		}
+
+		main img{
+			width:100%;
+
+		}
+
+		main article{
+
+			color:white;
+			font-weight:bold;
+			font-family:verdana;
+			padding-left:15px;
+
+		}
+
+		
+
+
+
+		
+
+		
+
+		
+
+		
+		footer{
+			width:100%;
+			height:300px;
+			background-color:yellow;
+			position:absolute;
+			top:2000px;
+		}
+
+
+		nav ul li{
+               float:left;
+               padding:10px;
+               list-style:none;
+               height:30px ;
+               width:100px;
+               margin:5px;
+               background-color:red;
+               line-height:30px;
+
+
+		}
+
+		nav ul li a{
+			color: white;
+			text-decoration: none;
+
+		}
+
+
+		section{
+			width:100%;
+			background-color:darkred;
+			height:800px;
+			position:absolute;
+			top:1200px;
+		}
+
+		.product{
+			position:relative;
+
+		}
+
+		.box-product1{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:5px;
+			left:10px;
+
+
+		}
+
+		 /* section #item-p1{
+			position: relative;
+		}
+
+		section #item-p1 .item{
+			margin-left:5px;
+			position:absolute;
+			top:2px;
+		} */
+
+		.box-product2{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:5px;
+			left:220px;
+
+
+		}
+
+       
+
+		.box-product3{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:5px;
+			left:430px;
+
+
+		}
+
+		.box-product4{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:5px;
+			left:640px;
+
+
+		}
+
+		.box-product5{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:5px;
+			left:850px;
+
+
+		}
+
+		.box-product6{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:5px;
+			left:1060px;
+
+
+		}
+
+		.box-product7{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:220px;
+			left:10px;
+
+
+		}
+
+		.box-product8{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:220px;
+			left:220px;
+
+
+		}
+
+		.box-product9{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:220px;
+			left:430px;
+
+
+		}
+
+		.box-product10{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:220px;
+			left:640px;
+
+
+		}
+
+		.box-product11{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:220px;
+			left:850px;
+
+
+		}
+
+		.box-product12{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:220px;
+			left:1060px;
+
+
+		}
+
+		.box-product13{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:430px;
+			left:10px;
+
+
+		}
+
+		.box-product14{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:430px;
+			left:220px;
+
+
+		}
+
+		.box-product15{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:430px;
+			left:430px;
+
+
+		}
+
+		.box-product16{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:430px;
+			left:640px;
+
+
+		}
+
+		.box-product17{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:430px;
+			left:850px;
+
+
+		}
+
+		.box-product18{
+			width:200px;
+			height:200px;
+			background-color:white;
+			border:2px solid green;
+			position: absolute;
+			top:430px;
+			left:1060px;
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+		
+
+	</style>
+</head>
+<body>
+
+	<div id="page">
+		<header>
+
+			<nav>
+
+				<ul>
+				
+				<li>
+				
+				<a href="index-7.html">Home</a>	
+				</li>
+				<li>
+				
+				<a href="index-34.html">ABOUT US</a>	
+				</li>
+				<li>
+				
+				<a href="index-5.html">PRODUCTS</a>	
+				</li>
+				<li>
+				
+				<a href="index-6.html">CONTACT US</a>	
+				</li>
+				<li>
+				
+				<a href="">SERVICES</a>	
+				</li>	
+				</ul>
+				
+			</nav>
+
+
+		</header>
+
+
+		<main>
+
+
+			<article>
+
+
+				<h1>Let's Buy From Us!</h1>
+
+
+
+
+				
+			</article>
+
+
+			<img src="img1.jpg" alt="product"/>
+
+			
+
+		</main>
+
+
+		<section class="product">
+
+       <div id="item-p1" class="box-product1">
+       	<div class="item"><!--itemstart-->
+       	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p>
+       </div><!--item end-->
+       </div>
+        <div id="item-p2" class="box-product2">
+            <div class="item">	
+                <img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+        </div>
+		<div class="box-product3">
+            	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p>
+    </div>
+		<div  class="box-product4">
+            	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p>
+        </div>
+		<div class="box-product5">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product6">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product7">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product8">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product9">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product10">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product11">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product12">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product13">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product14">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product15">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>	
+		<div class="box-product16">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product17">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>
+		<div class="box-product18">	<img src="p1.jpg" width="100%" height="100px">
+        <p>	Name:xyz</p>
+       	<p>Price:Rs-1000/</p></div>	
+		
+		
+	
+		
+		
+	
+
+		</section>
+
+		
+
+		<footer>footer</footer>
+	</div>
+
+</body>
+</html>
