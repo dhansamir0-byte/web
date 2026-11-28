@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+
+		/* NAVBAR */
+
+		.navbar{
+			background: #222;
+			display:flex;
+			align-items:center;
+			padding:15px 30px;
+		}
+
+		/*LOGO */
+		.logo{
+			color:pink;
+			font-size:25px;
+			font-weight:bold;
+
+			/*FLEX SHORTHAND */
+
+			flex:1 1 0;
+		}
+
+		/*MENU */
+		.menu{
+			display:flex;
+			list-style:none;
+			gap:25px;
+		}
+
+
+		.menu a{
+			color:white;
+			text-decoration:none;
+			font-size:17px;
+
+		}
+
+		.menu a:hover{
+			color:orange;
+		}
+
+		/* HAMBURGER */
+		.hamburger{
+			display:none;
+			color:white;
+			font-size:28px;
+			cursor:pointer;
+		}
+
+		/* MOBILE */
+
+		@media (max-width: 700px) {
+
+			.navbar{
+				position:relative;
+			}
+
+			.hamburger{
+				display:block;
+			}
+		
+
+		.menu{
+			display:none;
+			position:absolute;
+			top:100%;
+			left:0;
+			width:100%;
+			background:#222;
+			flex-direction:column;
+			gap:0;
+		}
+
+		.menu li{
+			text-align:center;
+			padding:15px;
+			border-top:1px solid #444;
+		}
+
+		/* CHECKBOX HACK */
+		#menu-toggle:checked ~ .menu {
+			display:flex;
+
+		}
+
+		#menu-toggle{
+			display:none;
+		}
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar">
+
+		<div class="logo">
+			MYWebsite
+		</div>
+
+		<input type="checkbox" id="menu-toggle">	
+
+		<label for="menu-toggle" class="hamburger">	
+			☰
+			</label>
+
+			<ul class="menu">
+
+				<li>
+					<a href="#">Home</a>
+				</li>
+
+
+				<li>
+					<a href="#">About</a>
+				</li>
+
+
+
+				<li>
+					<a href="#">Services</a>
+				</li>
+
+
+
+				<li>
+					<a href="#">Courses</a>
+				</li>
+
+				<li>
+					<a href="#">Contact</a>
+				</li>
+
+			</ul>
+
+
+	</nav>
+
+	<div style="padding :50px; text-align:center;">
+		<h1>Welcom To My Website</h1>
+		<p>Resize the browesr to see the responsive navbar.</p>
+		
+	</div>
+
+</body>
+</html>
